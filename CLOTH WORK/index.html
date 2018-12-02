@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cloth Project - Riadh Gharbi</title>
+	<script type="text/javascript" charset="utf-8" src="lib/mootools-1.2.4-core-yc.js"></script>
+    <script type="text/javascript" charset="utf-8" src="source/vector.js"></script>
+    <script type="text/javascript" charset="utf-8" src="source/vector.js"></script>
+    <script type="text/javascript" charset="utf-8" src="source/canvas.js"></script>
+    <script type="text/javascript" charset="utf-8" src="source/point.js"></script>
+    <script type="text/javascript" charset="utf-8" src="source/constraint.js"></script>
+    <script type="text/javascript" charset="utf-8" src="source/cloth.js"></script>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div class="left-column">
+		<h1> Simulation Cloth </h1>
+
+		<p>
+			Chaque ligne dans cette simulation est une constrainte, une ligne qui relie chaque deux points (avec masse et position mais sans volume).
+			Ces constraintes ont pour propriétés de controler la distance entre chaque point. Si deux points se séparent trop, la constrainte va limiter et forcer cette séparation a une certaine limite, le meme peut etre dire si on les approche, la constrainte va faire en sorte qu'il ya un minimum et maximum de distance entre chaque deux points.
+		</p>
+		
+	</div>
+	<div class="right-column">
+		
+	
+		<div class="Test">
+	        <canvas width="650px" height="450px">
+	            <strong>Sorry, It looks as though your browser does not support the canvas tag...</strong> If you can, I suggest that you try Chrome or Safari.
+	        </canvas>
+	        <p>Click and drag to move points. Hold down any key to pin them.</p>
+	        <p><input type="checkbox" id="constraints" checked="checked"/>Draw Lines &nbsp; <input type="checkbox" id="points" checked="checked" />Draw Points<br/></p>
+	        <p><input type="number" id="max_points" value=15  name="points" min="10" max="25"/>Number of points</p>
+	    </div>
+    </div>
+</body>
+</html>
